@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Form() {
+function Formulario() {
     // estados
     const [nombre, setNombre] = useState('');
     const [apellidos, setApellidos] = useState('');
@@ -100,4 +100,4 @@ function Form() {
     );
 }
 
-export default Form;
+export default Formulario;
