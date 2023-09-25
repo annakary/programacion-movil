@@ -1,34 +1,30 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
-const SingUp = () => {
+const ResetPassword = () => {
 return(
     <View style={styles.container}>
         <Text style={styles.title}>Reset Password</Text>
 
         <TextInput
                 style={styles.input}
-                placeholder="Nombre"
+                placeholder="Enter your password"
                 placeholderTextColor="#000"
             />
 
         <TextInput
                 style={styles.input}
-                placeholder="Email"
+                placeholder="New password"
                 placeholderTextColor="#000"
             />
         <TextInput
                 style={styles.input}
-                placeholder="Password"
+                placeholder="Confirm password"
                 placeholderTextColor="#000"
             />
 
             <TouchableOpacity style={styles.sendButton}>
-                <Text style={styles.sendButtonText}>Sing Up</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity>
-                <Text style={styles.linkText}>Login</Text>
+                <Text style={styles.sendButtonText}>Reset</Text>
             </TouchableOpacity>
     </View>
 );
@@ -82,4 +78,4 @@ const styles = StyleSheet.create({
         marginTop: 20,
     },
 });
-export default SingUp;
+export default ResetPassword;

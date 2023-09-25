@@ -72,6 +72,7 @@ const styles = StyleSheet.create({
         paddingVertical: 12,
         paddingHorizontal: 24,
         marginVertical: 40,
+        marginTop: 100,
     },
     sendButtonText: {
         fontSize: 18,
