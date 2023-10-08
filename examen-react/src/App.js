@@ -12,6 +12,21 @@ function App() {
   const isButtonDisabled = !nombre || !apellidos || !correo || !telefono;
   const [mostrarTabla, setMostrarTabla] = useState(false); 
 
+  const datos = [
+    {
+    id:1,
+    name: 'Joel Elias',
+    lastName: 'Peñaloza',
+    phone: '6122380504'
+  },
+  {
+    id:2,
+    name: 'annakary',
+    lastName: 'vega',
+    phone: '6122189437'
+  },
+];
+
 
   const NombreChange = (e) => {
       const nombre = e.target.value;
@@ -47,7 +62,7 @@ function App() {
 
   return (
    <div className='App'>
-    {mostrarTabla && <Table />} 
+    {mostrarTabla && <Table  datos={datos} />} 
     
  <section className="bg-gray-50">
         <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">

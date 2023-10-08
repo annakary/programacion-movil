@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
+
 const SingUp = () => {
+    const navigation = useNavigation();
 return(
     <View style={styles.container}>
         <Text style={styles.title}>Reset Password</Text>

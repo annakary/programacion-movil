@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, TextInput, StyleSheet ,TouchableOpacity} from 'react-native';
 
 
-const Login = () => {
+const Login = ({navigation}) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [rememberMe, setRememberMe] = useState(false);
@@ -14,6 +14,10 @@ const Login = () => {
     console.log('Remember Me:', rememberMe);
   };
 
+  const handleSignUp = () => {
+    navigation.navigate("SignUp");
+  };
+  
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Login</Text>
@@ -49,6 +53,12 @@ const Login = () => {
       <TouchableOpacity style={styles.loginButton} onPress={handleLogin}>
         <Text style={styles.loginButtonText}>Login</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity onPress={handleSignUp}>
+        <Text style={styles.linkText}>SignUp</Text>
+      </TouchableOpacity>
+
+
     </View>
   );
 };
