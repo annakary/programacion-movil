@@ -1,5 +1,5 @@
 {
-  "name": "todo-list",
+  "name": "proyecto-final",
   "version": "1.0.0",
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
@@ -9,19 +9,16 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@react-navigation/native": "^6.1.8",
-    "@react-navigation/stack": "^6.3.18",
-    "axios": "^1.5.1",
-    "expo": "~49.0.8",
+    "expo": "~49.0.15",
     "expo-status-bar": "~1.6.0",
     "nativewind": "^2.0.11",
     "react": "18.2.0",
-    "react-native": "0.72.5",
-    "tailwind-rn": "^4.2.0"
+    "react-native": "0.72.6",
+    "twrnc": "^3.6.4"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "tailwindcss": "3.3.2"
+    "tailwindcss": "^3.3.5"
   },
   "private": true
 }
